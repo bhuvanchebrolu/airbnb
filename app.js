@@ -110,9 +110,7 @@ app.get("/testListing",async(req,res)=>{
 
 })
 
-app.get("/",(req,res)=>{
-    res.send("Hi i am root");
-})
+
 
 app.use("/listings",listingRouter);
 app.use("/listings/:id/reviews",reviewRouter);
